@@ -105,6 +105,7 @@ namespace ValladoCalc
             Controls.Add(selectMethodText);
             ForeColor = SystemColors.ControlText;
             Name = "ValladoCalcLauncher";
+            Load += ValladoCalcLauncher_Load;
             ResumeLayout(false);
             PerformLayout();
         }

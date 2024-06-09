@@ -11,15 +11,6 @@ namespace ValladoCalc
         public ValladoCalcLauncher()
         {
             InitializeComponent();
-
-            if (Thread.CurrentThread.CurrentUICulture.Name == "ru-RU")
-            {
-                languageSelect.SelectedIndex = 1;
-            }
-            else
-            {
-                languageSelect.SelectedIndex = 0;
-            }
         }
 
         private void selectMethod_TextChanged(object sender, EventArgs e)
@@ -73,6 +64,11 @@ namespace ValladoCalc
         {
             Form COE2RV = new COE2RV();
             COE2RV.ShowDialog();
+        }
+
+        private void ValladoCalcLauncher_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
